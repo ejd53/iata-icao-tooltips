@@ -57,7 +57,7 @@ and respond with a JSON object containing a key-value pair for each matched code
 		],
 		"US":[
 			{ "name":"US Airways", "country":"United States" },
-			{ "name":"US Airways", "country":"United States" },
+			{ "name":"US Airways Express", "country":"United States" },
 			{ "name":"US Airways Shuttle", "country":"United States" }
 		],
 		"HEL":[
