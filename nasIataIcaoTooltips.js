@@ -194,7 +194,10 @@ var nasTooltips={
 		var numPossibleMatches=possibleMatches.length;
 		for(var j=0;j<numPossibleMatches;j++){
 			var node=possibleMatches[j];
-			found.push(node.textContent);
+			var code=node.textContent;
+                        if(-1==found.indexOf(code) && code.match(nasTooltips.regex)){
+                                found.push(code);
+                        }
 		}
 		nasTooltips.getDefinitionsFromServer(found);
 	},
