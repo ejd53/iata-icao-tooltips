@@ -68,8 +68,9 @@ and respond with a JSON object containing a key-value pair for each matched code
 		]
 }
 ```
-This structure is preferred, as it is easier to change the presentation. (The built-in renderers present name and country slightly
-differently between the tooltip and inline renderers, for example.) It is also easier to extend this if you want to. 
+This structure is preferred, as it is easier to change the presentation. (The built-in renderers present name and country slightly differently between the tooltip and inline renderers, for example.) It is also easier to extend this if you want to. 
+
+Your server-side script will need to set the correct MIME type. For PHP, `header('Content-Type: application/json');` at the top of your script will do this.
 
 The built-in tooltip renderer recognises two additional properties "kind" and "isCurrent", in addition to the basic "name" and 
 "country". Where these properties are present, they result in the <span> elements around each match in the tooltip having 
